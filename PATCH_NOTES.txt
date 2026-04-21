@@ -1,0 +1,3 @@
+CATHA prototype patch (2026-04-17)
+- Replaced unavailable stats::hanning.window() call with an internal hann_window() helper.
+- Added tryCatch() around feature extraction in app.R to surface errors as notifications.

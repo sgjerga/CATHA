@@ -1,0 +1,123 @@
+
+:root {
+  --catha-green: #198754;
+  --catha-green-soft: #edf7f3;
+  --catha-blue-soft: #eef4ff;
+  --catha-orange-soft: #fff4ea;
+  --catha-purple-soft: #f6efff;
+  --catha-border: #dfe7ef;
+  --catha-ink: #17324d;
+}
+
+body {
+  background: linear-gradient(180deg, #f5fbf8 0%, #f8fbff 100%);
+}
+
+.catha-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.catha-brand small {
+  font-weight: 500;
+  color: #557086;
+  font-size: 0.55rem; /* Shrunk down further to fix the overlap */
+  margin-top: 0.4rem;
+  line-height: 1.2;
+  max-width: 260px; 
+  white-space: normal;
+}
+
+.navbar {
+  box-shadow: 0 6px 24px rgba(23, 50, 77, 0.08);
+  padding-top: 0.8rem !important; /* Makes the navbar slightly taller */
+  padding-bottom: 0.8rem !important;
+}
+
+.catha-card {
+  border: 1px solid var(--catha-border);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(23, 50, 77, 0.06);
+}
+
+.card-header {
+  font-weight: 700;
+}
+
+.muted-text,
+.small.muted-text,
+.brush-hint {
+  color: #63768a;
+}
+
+.audio-shell {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid var(--catha-border);
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.record-grid,
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.download-grid {
+  margin-top: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.status-badge.idle {
+  background: #eef2f7;
+  color: #5a6b7a;
+}
+
+.status-badge.recording {
+  background: #ffe8e8;
+  color: #b42318;
+}
+
+.status-badge.ready {
+  background: #e9f8ef;
+  color: #117a45;
+}
+
+.status-badge.error {
+  background: #fff1f0;
+  color: #c52828;
+}
+
+.btn {
+  border-radius: 12px !important;
+  font-weight: 600;
+}
+
+.navbar {
+  box-shadow: 0 6px 24px rgba(23, 50, 77, 0.08);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  border-radius: 10px !important;
+}
+
+@media (max-width: 991px) {
+  .record-grid,
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
+}
