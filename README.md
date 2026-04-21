@@ -1,7 +1,7 @@
 
 # CATHA
 
-This project contains an R Shiny prototype of **CATHA (Clinical Audio Translation for Therapeutic Attunement)**. It is designed as a therapist-guided research support application aligned with the doctoral proposal's computational scope: selective audio handling, episode segmentation, formal feature tracing, uncertainty marking, and non-diagnostic export.
+This project contains an R Shiny prototype of **CATHA (Clinical Audio Translation for Therapeutic Attunement)**. It is designed as a therapist-guided research support application aligned with the  computational scope: selective audio handling, episode segmentation, formal feature tracing, uncertainty marking, and non-diagnostic export.
 
 ## What the App does
 
