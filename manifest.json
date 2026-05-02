@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.4.2",
+  "metadata": {
+    "appmode": "shiny",
+    "primary_rmd": null,
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false,
+    "entrypoint": "app.R"
+  },
+  "python": {
+    "version": "3.11.15",
+    "package_manager": {
+      "name": "pip",
+      "version": "26.1",
+      "package_file": "requirements.txt",
+      "allow_uv": true
+    }
+  },
+  "packages": {
+    "shiny": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "shiny",
+        "Title": "Web Application Framework for R",
+        "Version": "*",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "shiny",
+        "RemoteRef": "shiny",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "bslib": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "bslib",
+        "Title": "Custom Bootstrap Sass Themes for Shiny and R Markdown",
+        "Version": "*",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "bslib",
+        "RemoteRef": "bslib",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "DT": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "DT",
+        "Title": "A Wrapper of the JavaScript Library DataTables",
+        "Version": "*",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "DT",
+        "RemoteRef": "DT",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "jsonlite": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "jsonlite",
+        "Title": "A Simple and Robust JSON Parser and Generator for R",
+        "Version": "*",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "jsonlite",
+        "RemoteRef": "jsonlite",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "dplyr": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "dplyr",
+        "Title": "A Grammar of Data Manipulation",
+        "Version": "*",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "dplyr",
+        "RemoteRef": "dplyr",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "ggplot2": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "ggplot2",
+        "Title": "Create Elegant Data Visualisations Using the Grammar of Graphics",
+        "Version": "*",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "ggplot2",
+        "RemoteRef": "ggplot2",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "tuneR": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "tuneR",
+        "Title": "Analysis of Music and Speech",
+        "Version": "*",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "tuneR",
+        "RemoteRef": "tuneR",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "soundgen": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "soundgen",
+        "Title": "Sound Generation and Manipulation",
+        "Version": "*",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "soundgen",
+        "RemoteRef": "soundgen",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "seewave": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "seewave",
+        "Title": "Sound Analysis and Synthesis",
+        "Version": "*",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "seewave",
+        "RemoteRef": "seewave",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    }
+  },
+  "environment": {
+    "r": {
+      "requires": ">=4.3,<4.6",
+      "package_repository_resolution": "lax"
+    },
+    "python": {
+      "requires": ">=3.11,<3.12"
+    },
+    "environment_management": {
+      "r": true,
+      "python": true
+    }
+  },
+  "files": {
+    "app.R": {
+      "checksum": "34c955e6fac905b2844eed003c8075af"
+    },
+    "install_packages.R": {
+      "checksum": "4fdbabc945156b4a5236d9d08e885d28"
+    },
+    "run_app.R": {
+      "checksum": "5c30129f60864525c1f22b3e073e7deb"
+    },
+    "README.md": {
+      "checksum": "732acad53df5a94805347ec7cb9f5807"
+    },
+    "LICENSE": {
+      "checksum": "44030f844ade93fb0cc7068562139996"
+    },
+    "PATCH_NOTES.txt": {
+      "checksum": "5982b6b0ec0e6b827f3c982466088b30"
+    },
+    "R/helpers_audio.R": {
+      "checksum": "dd587629101e7358c8d02185f6d0f334"
+    },
+    "R/helpers_exports.R": {
+      "checksum": "5c2f1321a3d447a8edb7fd7d613bcfd4"
+    },
+    "R/helpers_external_notation.R": {
+      "checksum": "920ec26aeeaa31e51d7344096f2bc964"
+    },
+    "www/recorder.js": {
+      "checksum": "c221a8cca4c36ca62b914fcade7056c8"
+    },
+    "www/styles.css": {
+      "checksum": "afad206235e3f2a7e02e131fbc6b5da2"
+    },
+    "www/CATHA_Logo.png": {
+      "checksum": "541cc0c42cdc9d1783924201a68f86f5"
+    }
+  },
+  "users": null
+}
