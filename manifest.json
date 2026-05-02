@@ -10,15 +10,6 @@
     "has_parameters": false,
     "entrypoint": "app.R"
   },
-  "python": {
-    "version": "3.11.15",
-    "package_manager": {
-      "name": "pip",
-      "version": "26.1",
-      "package_file": "requirements.txt",
-      "allow_uv": true
-    }
-  },
   "packages": {
     "shiny": {
       "Source": "CRAN",
@@ -26,7 +17,7 @@
       "description": {
         "Package": "shiny",
         "Title": "Web Application Framework for R",
-        "Version": "*",
+        "Version": "1.13.0",
         "Repository": "CRAN",
         "RemoteType": "standard",
         "RemotePkgRef": "shiny",
@@ -40,7 +31,7 @@
       "description": {
         "Package": "bslib",
         "Title": "Custom Bootstrap Sass Themes for Shiny and R Markdown",
-        "Version": "*",
+        "Version": "0.10.0",
         "Repository": "CRAN",
         "RemoteType": "standard",
         "RemotePkgRef": "bslib",
@@ -54,7 +45,7 @@
       "description": {
         "Package": "DT",
         "Title": "A Wrapper of the JavaScript Library DataTables",
-        "Version": "*",
+        "Version": "0.34.0",
         "Repository": "CRAN",
         "RemoteType": "standard",
         "RemotePkgRef": "DT",
@@ -68,7 +59,7 @@
       "description": {
         "Package": "jsonlite",
         "Title": "A Simple and Robust JSON Parser and Generator for R",
-        "Version": "*",
+        "Version": "2.0.0",
         "Repository": "CRAN",
         "RemoteType": "standard",
         "RemotePkgRef": "jsonlite",
@@ -82,7 +73,7 @@
       "description": {
         "Package": "dplyr",
         "Title": "A Grammar of Data Manipulation",
-        "Version": "*",
+        "Version": "1.2.1",
         "Repository": "CRAN",
         "RemoteType": "standard",
         "RemotePkgRef": "dplyr",
@@ -96,7 +87,7 @@
       "description": {
         "Package": "ggplot2",
         "Title": "Create Elegant Data Visualisations Using the Grammar of Graphics",
-        "Version": "*",
+        "Version": "4.0.3",
         "Repository": "CRAN",
         "RemoteType": "standard",
         "RemotePkgRef": "ggplot2",
@@ -110,7 +101,7 @@
       "description": {
         "Package": "tuneR",
         "Title": "Analysis of Music and Speech",
-        "Version": "*",
+        "Version": "1.4.7",
         "Repository": "CRAN",
         "RemoteType": "standard",
         "RemotePkgRef": "tuneR",
@@ -124,7 +115,7 @@
       "description": {
         "Package": "soundgen",
         "Title": "Sound Generation and Manipulation",
-        "Version": "*",
+        "Version": "2.9.0",
         "Repository": "CRAN",
         "RemoteType": "standard",
         "RemotePkgRef": "soundgen",
@@ -138,7 +129,7 @@
       "description": {
         "Package": "seewave",
         "Title": "Sound Analysis and Synthesis",
-        "Version": "*",
+        "Version": "2.2.4",
         "Repository": "CRAN",
         "RemoteType": "standard",
         "RemotePkgRef": "seewave",
@@ -152,12 +143,9 @@
       "requires": ">=4.3,<4.6",
       "package_repository_resolution": "lax"
     },
-    "python": {
-      "requires": ">=3.11,<3.12"
-    },
     "environment_management": {
       "r": true,
-      "python": true
+      "python": false
     }
   },
   "files": {
