@@ -1,0 +1,6 @@
+CATHA visual layout update (2026-05-02)
+- Added CATHA logo branding to the navigation bar.
+- Reworked the app theme around the CATHA logo palette: teal/cyan, orange/gold, and clinical navy.
+- Added a modern glass-card layout, warmer page headers, stronger feature separation, and smoother hover states.
+- Enhanced execution buttons, export buttons, inputs, tabs, tables, score panels, and recorder/status badges.
+- Preserved all existing CATHA, Basic Pitch, MIDI, MusicXML, recording, segmentation, feature extraction, and export functionality.

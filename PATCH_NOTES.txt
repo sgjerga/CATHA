@@ -1,3 +1,20 @@
 CATHA prototype patch (2026-04-17)
 - Replaced unavailable stats::hanning.window() call with an internal hann_window() helper.
 - Added tryCatch() around feature extraction in app.R to surface errors as notifications.
+
+
+CATHA prototype patch (2026-05-02)
+- Removed the redundant "Use current brush" button from the Segmentation view. The waveform brush already updates segment start/end automatically.
+- Removed the matching server-side apply_brush_range observer.
+- Added copyright notice for Sllobodan Gjerga, 2026 (sgjerga@gmail.com) to the About & Documentation view.
+- Added PolyForm Noncommercial License 1.0.0 notice for noncommercial academic/research use, with commercial licensing directed to sgjerga@gmail.com.
+- Added LICENSE file and updated README licensing/workflow notes.
+
+CATHA external notation patch (2026-05-02)
+- Added optional Basic Pitch external audio-to-MIDI notation pathway.
+- Added new helper script: R/helpers_external_notation.R.
+- Added UI controls for selecting CATHA hybrid trace vs Basic Pitch external transcription.
+- Added Basic Pitch note-event table in Features & Traces.
+- Added individual downloads for Basic Pitch MIDI, note-event CSV, and optional MusicXML.
+- Updated the full bundle export so generated Basic Pitch outputs are included under external_notation_basic_pitch/.
+- Updated About & Documentation and install instructions to explain the optional Python dependency.
