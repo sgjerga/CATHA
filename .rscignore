@@ -1,10 +1,24 @@
-.venv-basic-pitch/
-.venv/
+# Do not deploy local Python environments or Basic Pitch test outputs.
+.venv-basic-pitch
+.venv
+basic_pitch_test
+basic_pitch_test_v9
 requirements.txt
-basic_pitch_test/
-basic_pitch_test_v9/
+__pycache__
+*.pyc
+
+# Do not deploy temporary bundles/archives.
 *.zip
 *.tar.gz
-.Rproj.user/
-.git/
-__pycache__/
+*.tgz
+
+# Local development files.
+.git
+.Rproj.user
+*.Rproj
+
+# Optional local troubleshooting notes; keep README.md and LICENSE.
+README_BASIC_PITCH_ZERO_NOTES.md
+README_FIX.txt
+README_patch_note.txt
+PATCH_NOTES_layout.txt
