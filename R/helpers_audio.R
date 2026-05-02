@@ -7,24 +7,105 @@ sanitize_stem <- function(x) {
   gsub("[^A-Za-z0-9_-]+", "_", tools::file_path_sans_ext(basename(x)))
 }
 
-ensure_wav <- function(input_path, output_path, sample_rate = 44100, mono = TRUE) {
+quote_system_arg <- function(x) {
+  x <- as.character(x)
+  if (.Platform$OS.type == "windows") {
+    shQuote(x, type = "cmd")
+  } else {
+    shQuote(x, type = "sh")
+  }
+}
+
+system2_capture <- function(command, args = character(), stdout = TRUE, stderr = TRUE, ...) {
+  args <- as.character(args %||% character())
+  quoted_args <- vapply(args, quote_system_arg, character(1), USE.NAMES = FALSE)
+  suppressWarnings(system2(command, args = quoted_args, stdout = stdout, stderr = stderr, ...))
+}
+
+noise_filter_chain <- function(strength = "Medium", speech_bandpass = TRUE) {
+  strength_key <- tolower(as.character(strength %||% "Medium"))
+  nr <- switch(
+    strength_key,
+    "light" = 8,
+    "medium" = 12,
+    "strong" = 18,
+    12
+  )
+
+  filters <- character()
+  if (isTRUE(speech_bandpass)) {
+    # Removes low-frequency rumble and very high-frequency hiss while retaining
+    # the relevant speech/pitch band for CATHA's trace workflow.
+    filters <- c(filters, "highpass=f=80", "lowpass=f=8000")
+  }
+  filters <- c(filters, sprintf("afftdn=nr=%s", nr))
+  paste(filters, collapse = ",")
+}
+
+ensure_wav <- function(input_path,
+                       output_path,
+                       sample_rate = 44100,
+                       mono = TRUE,
+                       reduce_background_noise = FALSE,
+                       noise_reduction_strength = "Medium",
+                       speech_bandpass = TRUE) {
   stopifnot(file.exists(input_path))
   ext <- tolower(tools::file_ext(input_path))
   dir.create(dirname(output_path), recursive = TRUE, showWarnings = FALSE)
 
   ffmpeg <- Sys.which("ffmpeg")
+  needs_ffmpeg <- ext != "wav" || isTRUE(reduce_background_noise)
+  if (needs_ffmpeg && !nzchar(ffmpeg)) {
+    stop(
+      "ffmpeg is required to convert non-WAV uploads and to apply ambient/background-noise filtering.",
+      call. = FALSE
+    )
+  }
+
   if (nzchar(ffmpeg)) {
-    args <- c(
+    # First normalize every source to an analysis-ready WAV. If noise reduction
+    # is enabled, this intermediate file is then denoised into output_path.
+    intermediate_path <- output_path
+    if (isTRUE(reduce_background_noise)) {
+      intermediate_path <- tempfile(
+        pattern = "catha_pre_denoise_",
+        tmpdir = dirname(output_path),
+        fileext = ".wav"
+      )
+    }
+
+    normalize_args <- c(
       "-y",
       "-i", normalizePath(input_path, winslash = "/", mustWork = TRUE),
       if (isTRUE(mono)) c("-ac", "1") else c(),
       "-ar", as.character(sample_rate),
-      normalizePath(output_path, winslash = "/", mustWork = FALSE)
+      "-vn",
+      normalizePath(intermediate_path, winslash = "/", mustWork = FALSE)
     )
-    out <- suppressWarnings(system2(ffmpeg, args = args, stdout = TRUE, stderr = TRUE))
-    if (!file.exists(output_path)) {
-      stop("ffmpeg could not convert the audio file. Details: ", paste(out, collapse = " "))
+    normalize_out <- system2_capture(ffmpeg, args = normalize_args, stdout = TRUE, stderr = TRUE)
+    if (!file.exists(intermediate_path)) {
+      stop("ffmpeg could not normalize the audio file. Details: ", paste(normalize_out, collapse = " "))
     }
+
+    if (isTRUE(reduce_background_noise)) {
+      filter_chain <- noise_filter_chain(noise_reduction_strength, speech_bandpass)
+      denoise_args <- c(
+        "-y",
+        "-i", normalizePath(intermediate_path, winslash = "/", mustWork = TRUE),
+        "-af", filter_chain,
+        "-ar", as.character(sample_rate),
+        if (isTRUE(mono)) c("-ac", "1") else c(),
+        "-vn",
+        normalizePath(output_path, winslash = "/", mustWork = FALSE)
+      )
+      denoise_out <- system2_capture(ffmpeg, args = denoise_args, stdout = TRUE, stderr = TRUE)
+      if (file.exists(intermediate_path)) unlink(intermediate_path)
+      if (!file.exists(output_path)) {
+        stop("ffmpeg could not apply the ambient/background-noise filter. Details: ", paste(denoise_out, collapse = " "))
+      }
+      return(output_path)
+    }
+
     return(output_path)
   }
 
