@@ -9,7 +9,6 @@ suppressPackageStartupMessages({
   library(dplyr)
   library(ggplot2)
   library(tuneR)
-  library(soundgen)
   library(seewave)
 })
 
@@ -17,7 +16,7 @@ source(file.path("R", "helpers_audio.R"))
 source(file.path("R", "helpers_exports.R"))
 source(file.path("R", "helpers_external_notation.R"))
 
-required_packages <- c("shiny", "bslib", "DT", "jsonlite", "dplyr", "ggplot2", "tuneR", "soundgen", "seewave")
+required_packages <- c("shiny", "bslib", "DT", "jsonlite", "dplyr", "ggplot2", "tuneR", "seewave")
 missing_packages <- required_packages[!vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)]
 if (length(missing_packages) > 0) {
   stop(
@@ -366,14 +365,13 @@ ui <- page_navbar(
           tags$li(tags$code("dplyr"), " — table manipulation and joins."),
           tags$li(tags$code("ggplot2"), " — waveform, pitch, and intensity visualisation."),
           tags$li(tags$code("tuneR"), " — WAV reading/writing and segment extraction."),
-          tags$li(tags$code("soundgen"), " — audio processing support."),
           tags$li(tags$code("seewave"), " — acoustic feature extraction, especially pitch estimation for the default CATHA trace."),
           tags$li(tags$code("tools"), ", ", tags$code("stats"), ", and ", tags$code("utils"), " — base/recommended R packages used for file handling, statistics, and ZIP export.")
         ),
         tags$p("Install the R packages from the project root with:"),
         tags$pre("source(\"install_packages.R\")"),
         tags$p("Or install them manually in R:"),
-        tags$pre("install.packages(c(\n  \"shiny\", \"bslib\", \"DT\", \"jsonlite\", \"dplyr\",\n  \"ggplot2\", \"tuneR\", \"soundgen\", \"seewave\"\n), repos = \"https://cloud.r-project.org\")"),
+        tags$pre("install.packages(c(\n  \"shiny\", \"bslib\", \"DT\", \"jsonlite\", \"dplyr\",\n  \"ggplot2\", \"tuneR\", \"seewave\"\n), repos = \"https://cloud.r-project.org\")"),
 
         tags$hr(),
         tags$h4("System Dependencies"),

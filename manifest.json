@@ -11,17 +11,16 @@
     "entrypoint": "app.R"
   },
   "packages": {
-    "shiny": {
+    "base64enc": {
       "Source": "CRAN",
       "Repository": "https://cloud.r-project.org",
       "description": {
-        "Package": "shiny",
-        "Title": "Web Application Framework for R",
-        "Version": "1.13.0",
+        "Package": "base64enc",
+        "Version": "0.1-6",
         "Repository": "CRAN",
         "RemoteType": "standard",
-        "RemotePkgRef": "shiny",
-        "RemoteRef": "shiny",
+        "RemotePkgRef": "base64enc",
+        "RemoteRef": "base64enc",
         "RemoteRepos": "https://cloud.r-project.org/"
       }
     },
@@ -30,7 +29,6 @@
       "Repository": "https://cloud.r-project.org",
       "description": {
         "Package": "bslib",
-        "Title": "Custom Bootstrap Sass Themes for Shiny and R Markdown",
         "Version": "0.10.0",
         "Repository": "CRAN",
         "RemoteType": "standard",
@@ -39,12 +37,76 @@
         "RemoteRepos": "https://cloud.r-project.org/"
       }
     },
+    "cachem": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "cachem",
+        "Version": "1.1.0",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "cachem",
+        "RemoteRef": "cachem",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "cli": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "cli",
+        "Version": "3.6.6",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "cli",
+        "RemoteRef": "cli",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "commonmark": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "commonmark",
+        "Version": "2.0.0",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "commonmark",
+        "RemoteRef": "commonmark",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "crosstalk": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "crosstalk",
+        "Version": "1.2.2",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "crosstalk",
+        "RemoteRef": "crosstalk",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "digest": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "digest",
+        "Version": "0.6.39",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "digest",
+        "RemoteRef": "digest",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
     "DT": {
       "Source": "CRAN",
       "Repository": "https://cloud.r-project.org",
       "description": {
         "Package": "DT",
-        "Title": "A Wrapper of the JavaScript Library DataTables",
         "Version": "0.34.0",
         "Repository": "CRAN",
         "RemoteType": "standard",
@@ -53,26 +115,11 @@
         "RemoteRepos": "https://cloud.r-project.org/"
       }
     },
-    "jsonlite": {
-      "Source": "CRAN",
-      "Repository": "https://cloud.r-project.org",
-      "description": {
-        "Package": "jsonlite",
-        "Title": "A Simple and Robust JSON Parser and Generator for R",
-        "Version": "2.0.0",
-        "Repository": "CRAN",
-        "RemoteType": "standard",
-        "RemotePkgRef": "jsonlite",
-        "RemoteRef": "jsonlite",
-        "RemoteRepos": "https://cloud.r-project.org/"
-      }
-    },
     "dplyr": {
       "Source": "CRAN",
       "Repository": "https://cloud.r-project.org",
       "description": {
         "Package": "dplyr",
-        "Title": "A Grammar of Data Manipulation",
         "Version": "1.2.1",
         "Repository": "CRAN",
         "RemoteType": "standard",
@@ -81,12 +128,102 @@
         "RemoteRepos": "https://cloud.r-project.org/"
       }
     },
+    "evaluate": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "evaluate",
+        "Version": "1.0.5",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "evaluate",
+        "RemoteRef": "evaluate",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "fansi": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "fansi",
+        "Version": "1.0.7",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "fansi",
+        "RemoteRef": "fansi",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "farver": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "farver",
+        "Version": "2.1.2",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "farver",
+        "RemoteRef": "farver",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "fastmap": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "fastmap",
+        "Version": "1.2.0",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "fastmap",
+        "RemoteRef": "fastmap",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "fontawesome": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "fontawesome",
+        "Version": "0.5.3",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "fontawesome",
+        "RemoteRef": "fontawesome",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "fs": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "fs",
+        "Version": "2.1.0",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "fs",
+        "RemoteRef": "fs",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "generics": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "generics",
+        "Version": "0.1.4",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "generics",
+        "RemoteRef": "generics",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
     "ggplot2": {
       "Source": "CRAN",
       "Repository": "https://cloud.r-project.org",
       "description": {
         "Package": "ggplot2",
-        "Title": "Create Elegant Data Visualisations Using the Grammar of Graphics",
         "Version": "4.0.3",
         "Repository": "CRAN",
         "RemoteType": "standard",
@@ -95,31 +232,393 @@
         "RemoteRepos": "https://cloud.r-project.org/"
       }
     },
-    "tuneR": {
+    "glue": {
       "Source": "CRAN",
       "Repository": "https://cloud.r-project.org",
       "description": {
-        "Package": "tuneR",
-        "Title": "Analysis of Music and Speech",
-        "Version": "1.4.7",
+        "Package": "glue",
+        "Version": "1.8.0",
         "Repository": "CRAN",
         "RemoteType": "standard",
-        "RemotePkgRef": "tuneR",
-        "RemoteRef": "tuneR",
+        "RemotePkgRef": "glue",
+        "RemoteRef": "glue",
         "RemoteRepos": "https://cloud.r-project.org/"
       }
     },
-    "soundgen": {
+    "gtable": {
       "Source": "CRAN",
       "Repository": "https://cloud.r-project.org",
       "description": {
-        "Package": "soundgen",
-        "Title": "Sound Generation and Manipulation",
-        "Version": "2.9.0",
+        "Package": "gtable",
+        "Version": "0.3.6",
         "Repository": "CRAN",
         "RemoteType": "standard",
-        "RemotePkgRef": "soundgen",
-        "RemoteRef": "soundgen",
+        "RemotePkgRef": "gtable",
+        "RemoteRef": "gtable",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "highr": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "highr",
+        "Version": "0.12",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "highr",
+        "RemoteRef": "highr",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "htmltools": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "htmltools",
+        "Version": "0.5.9",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "htmltools",
+        "RemoteRef": "htmltools",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "htmlwidgets": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "htmlwidgets",
+        "Version": "1.6.4",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "htmlwidgets",
+        "RemoteRef": "htmlwidgets",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "httpuv": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "httpuv",
+        "Version": "1.6.17",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "httpuv",
+        "RemoteRef": "httpuv",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "isoband": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "isoband",
+        "Version": "0.3.0",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "isoband",
+        "RemoteRef": "isoband",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "jquerylib": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "jquerylib",
+        "Version": "0.1.4",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "jquerylib",
+        "RemoteRef": "jquerylib",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "jsonlite": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "jsonlite",
+        "Version": "2.0.0",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "jsonlite",
+        "RemoteRef": "jsonlite",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "knitr": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "knitr",
+        "Version": "1.51",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "knitr",
+        "RemoteRef": "knitr",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "labeling": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "labeling",
+        "Version": "0.4.3",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "labeling",
+        "RemoteRef": "labeling",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "later": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "later",
+        "Version": "1.4.8",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "later",
+        "RemoteRef": "later",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "lazyeval": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "lazyeval",
+        "Version": "0.2.3",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "lazyeval",
+        "RemoteRef": "lazyeval",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "lifecycle": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "lifecycle",
+        "Version": "1.0.5",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "lifecycle",
+        "RemoteRef": "lifecycle",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "magrittr": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "magrittr",
+        "Version": "2.0.4",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "magrittr",
+        "RemoteRef": "magrittr",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "memoise": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "memoise",
+        "Version": "2.0.1",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "memoise",
+        "RemoteRef": "memoise",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "mime": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "mime",
+        "Version": "0.13",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "mime",
+        "RemoteRef": "mime",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "otel": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "otel",
+        "Version": "0.2.0",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "otel",
+        "RemoteRef": "otel",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "pillar": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "pillar",
+        "Version": "1.11.1",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "pillar",
+        "RemoteRef": "pillar",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "pkgconfig": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "pkgconfig",
+        "Version": "2.0.3",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "pkgconfig",
+        "RemoteRef": "pkgconfig",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "promises": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "promises",
+        "Version": "1.5.0",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "promises",
+        "RemoteRef": "promises",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "R6": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "R6",
+        "Version": "2.6.1",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "R6",
+        "RemoteRef": "R6",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "rappdirs": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "rappdirs",
+        "Version": "0.3.3",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "rappdirs",
+        "RemoteRef": "rappdirs",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "RColorBrewer": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "RColorBrewer",
+        "Version": "1.1-3",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "RColorBrewer",
+        "RemoteRef": "RColorBrewer",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "Rcpp": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "Rcpp",
+        "Version": "1.1.1",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "Rcpp",
+        "RemoteRef": "Rcpp",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "rlang": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "rlang",
+        "Version": "1.2.0",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "rlang",
+        "RemoteRef": "rlang",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "rmarkdown": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "rmarkdown",
+        "Version": "2.31",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "rmarkdown",
+        "RemoteRef": "rmarkdown",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "S7": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "S7",
+        "Version": "0.2.2",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "S7",
+        "RemoteRef": "S7",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "sass": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "sass",
+        "Version": "0.4.10",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "sass",
+        "RemoteRef": "sass",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "scales": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "scales",
+        "Version": "1.4.0",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "scales",
+        "RemoteRef": "scales",
         "RemoteRepos": "https://cloud.r-project.org/"
       }
     },
@@ -128,12 +627,193 @@
       "Repository": "https://cloud.r-project.org",
       "description": {
         "Package": "seewave",
-        "Title": "Sound Analysis and Synthesis",
         "Version": "2.2.4",
         "Repository": "CRAN",
         "RemoteType": "standard",
         "RemotePkgRef": "seewave",
         "RemoteRef": "seewave",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "shiny": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "shiny",
+        "Version": "1.13.0",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "shiny",
+        "RemoteRef": "shiny",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "signal": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "signal",
+        "Version": "1.8-1",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "signal",
+        "RemoteRef": "signal",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "sourcetools": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "sourcetools",
+        "Version": "0.1.7-2",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "sourcetools",
+        "RemoteRef": "sourcetools",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "tibble": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "tibble",
+        "Version": "3.3.1",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "tibble",
+        "RemoteRef": "tibble",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "tidyselect": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "tidyselect",
+        "Version": "1.2.1",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "tidyselect",
+        "RemoteRef": "tidyselect",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "tinytex": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "tinytex",
+        "Version": "0.58",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "tinytex",
+        "RemoteRef": "tinytex",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "tuneR": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "tuneR",
+        "Version": "1.4.7",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "tuneR",
+        "RemoteRef": "tuneR",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "utf8": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "utf8",
+        "Version": "1.2.6",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "utf8",
+        "RemoteRef": "utf8",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "vctrs": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "vctrs",
+        "Version": "0.7.3",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "vctrs",
+        "RemoteRef": "vctrs",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "viridisLite": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "viridisLite",
+        "Version": "0.4.3",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "viridisLite",
+        "RemoteRef": "viridisLite",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "withr": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "withr",
+        "Version": "3.0.2",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "withr",
+        "RemoteRef": "withr",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "xfun": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "xfun",
+        "Version": "0.57",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "xfun",
+        "RemoteRef": "xfun",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "xtable": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "xtable",
+        "Version": "1.8-8",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "xtable",
+        "RemoteRef": "xtable",
+        "RemoteRepos": "https://cloud.r-project.org/"
+      }
+    },
+    "yaml": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "yaml",
+        "Version": "2.3.12",
+        "Repository": "CRAN",
+        "RemoteType": "standard",
+        "RemotePkgRef": "yaml",
+        "RemoteRef": "yaml",
         "RemoteRepos": "https://cloud.r-project.org/"
       }
     }
@@ -150,28 +830,28 @@
   },
   "files": {
     "app.R": {
-      "checksum": "34c955e6fac905b2844eed003c8075af"
+      "checksum": "8c5809e578ace09f62360697ef694948"
     },
     "install_packages.R": {
-      "checksum": "4fdbabc945156b4a5236d9d08e885d28"
+      "checksum": "e15181edcb42ddea98299060675c8a89"
     },
     "run_app.R": {
       "checksum": "5c30129f60864525c1f22b3e073e7deb"
     },
     "README.md": {
-      "checksum": "732acad53df5a94805347ec7cb9f5807"
+      "checksum": "f17387e3f9deadc7f9fa41fd2e16a792"
     },
     "LICENSE": {
       "checksum": "44030f844ade93fb0cc7068562139996"
     },
     "PATCH_NOTES.txt": {
-      "checksum": "5982b6b0ec0e6b827f3c982466088b30"
+      "checksum": "8267db39bdb8bc21e09c6f77a16f1bfd"
     },
     "R/helpers_audio.R": {
       "checksum": "dd587629101e7358c8d02185f6d0f334"
     },
     "R/helpers_exports.R": {
-      "checksum": "5c2f1321a3d447a8edb7fd7d613bcfd4"
+      "checksum": "1565bb3749d31e7dfb1d9adcf849b122"
     },
     "R/helpers_external_notation.R": {
       "checksum": "920ec26aeeaa31e51d7344096f2bc964"

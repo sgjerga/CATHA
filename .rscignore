@@ -1,17 +1,10 @@
-# Local/dev-only files that Connect Cloud should not deploy
-.venv-basic-pitch
-.venv
-Rproj.user
-.Rproj.user
-.git
-.gitignore
-basic_pitch_test
-basic_pitch_test_v9
+.venv-basic-pitch/
+.venv/
 requirements.txt
-*.mid
-*.musicxml
-*_basic_pitch.csv
-*_basic_pitch.mid
+basic_pitch_test/
+basic_pitch_test_v9/
 *.zip
 *.tar.gz
-__pycache__
+.Rproj.user/
+.git/
+__pycache__/
