@@ -10,13 +10,14 @@ suppressPackageStartupMessages({
   library(ggplot2)
   library(tuneR)
   library(seewave)
+  library(cpp11)
 })
 
 source(file.path("R", "helpers_audio.R"))
 source(file.path("R", "helpers_exports.R"))
 source(file.path("R", "helpers_external_notation.R"))
 
-required_packages <- c("shiny", "bslib", "DT", "jsonlite", "dplyr", "ggplot2", "tuneR", "seewave")
+required_packages <- c("shiny", "bslib", "DT", "jsonlite", "dplyr", "ggplot2", "tuneR", "seewave", "cpp11")
 missing_packages <- required_packages[!vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)]
 if (length(missing_packages) > 0) {
   stop(
